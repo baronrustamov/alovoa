@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile
     image: alovoa
     ports:
-      - 8081:8080
+      - 8080:8080
     stdin_open: true
     tty: true
     links:
@@ -19,8 +19,8 @@ services:
     expose:
       - 3306
     environment:
-      MARIADB_DATABASE: alovoaDB
-      MARIADB_USER: root
+      MARIADB_DATABASE: alovoa
+      MARIADB_USER: example
       MARIADB_PASSWORD: example
       MARIADB_ROOT_PASSWORD: example
     volumes:
